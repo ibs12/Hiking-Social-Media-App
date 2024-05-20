@@ -1,0 +1,244 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+.justify-start {
+	display: flex;
+	justify-content: flex-start;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: url("../assets/login_page_image.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+body {
+	min-height: 100vh;
+}
+
+/* Adjust container padding and alignment for smaller screens */
+@media (max-width: 600px) {
+	.page-container {
+		height: auto; /* Allow the container to grow with the content */
+		padding: 10px 0; /* Add some vertical padding */
+	}
+
+	.trek-header {
+		font-size: 40px; /* Reduce font size for smaller screens */
+	}
+
+	.trek-logo {
+		width: 50px; /* Reduce logo size */
+		height: auto;
+	}
+	.forms {
+		margin-top: -50px; /* Pulls the form up by 20 pixels */
+		/* Other styles... */
+	}
+
+	.wrapper form .row {
+		height: 0px;
+		margin-bottom: 0px;
+		position: relative;
+	}
+
+	.wrapper .title,
+	.wrapper form .row input,
+	.wrapper form .button input,
+	.input-header,
+	.sub-text {
+		/* Reduce font sizes to fit content without scrolling */
+		font-size: 14px;
+	}
+
+	.wrapper form {
+		padding: 20px 15px; /* Reduce padding inside the form */
+	}
+
+	.wrapper form .row {
+		height: auto; /* Adjust row height based on content */
+		margin-bottom: 10px; /* Reduce margin between rows */
+	}
+
+	.container {
+		padding: 0px 0px; /* Reduce padding on the sides */
+	}
+
+	/* Additional adjustments to the container and its children may be needed to ensure a perfect fit */
+}
+
+a {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	color: white;
+	font-size: 16px;
+}
+
+input {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	color: white;
+	font-size: 12px;
+}
+
+.logo-text {
+	color: #000;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.input-header {
+	display: flex;
+	justify-content: flex-start;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	padding-bottom: 0px;
+}
+
+.sub-text {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	color: white;
+	font-size: 12px;
+}
+
+::selection {
+	background: black;
+}
+
+/* Containers */
+.page-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container {
+	max-width: 100%;
+	width: 100%;
+	padding: 0 20px;
+	padding-top: 5%;
+	margin: auto;
+}
+
+.app-logo-container {
+	padding-bottom: 10px;
+}
+
+.header-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Wrapper Selector */
+.wrapper {
+	width: 100%;
+	background: rgba(30, 30, 30, 0.55);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(25px);
+	border-radius: 5px;
+	box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title {
+	height: 90px;
+	font-family: "Roboto", sans-serif;
+	font-size: 30px;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper form {
+	padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row {
+	height: 45px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.wrapper form .row input {
+	height: 100%;
+	width: 100%;
+	background: rgba(30, 30, 30, 0);
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	outline: none;
+	padding-left: 60px;
+	border-radius: 5px;
+	border: 1px solid white;
+	font-size: 16px;
+}
+
+.wrapper form .row i {
+	position: absolute;
+	width: 47px;
+	height: 100%;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	color: #fff;
+	font-size: 18px;
+	background: black;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-radius: 5px 0 0 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper form .button input {
+	border: 1px solid black;
+	color: #fff;
+	width: 100px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	padding-left: 0px;
+	background: black;
+	cursor: pointer;
+}
+
+/* Form Selector */
+form .row input:focus {
+	border-color: black;
+	box-shadow: inset 0px 0px 2px 2px black;
+	transition: all 0.4s ease;
+}
+
+form .row .icon {
+	border: 1px solid transparent; /* Make sure it has a border to change */
+	width: 20px;
+	height: 20px;
+}
+
+form .row:focus-within .icon-container {
+	border-color: black;
+	box-shadow: inset 0px 0px 2px 2px black;
+	transition: all 0.4s ease;
+}
+
+form .row input::placeholder {
+	color: grey;
+	font-size: 12px;
+}

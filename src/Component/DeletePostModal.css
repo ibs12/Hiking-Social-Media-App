@@ -1,0 +1,113 @@
+.deleteModal-modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(5px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	
+}
+
+.deleteModal-title {
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+
+.deleteModal-modalContent {
+	background-color: #1e1e1ee7;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	width: fit-content;
+	font-family: "Roboto", sans-serif; 
+
+}
+
+.deleteModal-dialogueText {
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+
+}
+
+.deleteModal-textboxLabel {
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+
+}
+
+.deleteModal-modalContent h3  {
+	margin-top: 0;
+	color: white;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+}
+
+.deleteModal-modalContent button {
+	margin-right: 10px;
+	width: 15%;
+}
+
+.deleteModal-noButton {
+	cursor: pointer;
+	padding: 10px 20px;
+	margin-right: 15px;
+
+	border: none;
+	border-radius: 15px;
+	background-color: #000000;
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+}
+
+.deleteModal-yesButton {
+	cursor: pointer;
+	padding: 10px 20px;
+	margin-left: 15px;
+	border: none;
+	border-radius: 15px;
+	background-color: #800000;
+	color: white;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	
+	
+}
+
+.deleteModal-noButton:hover {
+	background-color: #131313;
+}
+
+.deleteModal-yesButton:hover {
+	background-color: #6b0202;
+}
+
+.deleteModal-dialogueText {
+	font-size: 20px;
+}
+
+.deleteModal-closeButton {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	border: none;
+	background: transparent;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.deleteModal-buttonsArea {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}

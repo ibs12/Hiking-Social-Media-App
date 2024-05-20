@@ -1,0 +1,18 @@
+.settings {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
+	width: 100%;
+	flex-direction: column;
+	margin-top: 90px;
+}
+
+.loading-area {
+	height: 218px;
+}
+
+.title-profile {
+	width: 100%;
+	padding-left: 12px;
+}

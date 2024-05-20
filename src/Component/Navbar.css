@@ -1,0 +1,38 @@
+.nav-user-picture {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.all-nav-icons:hover {
+	opacity: 70%;
+	cursor: pointer;
+}
+
+.nav-dropdown-arrow {
+	padding-top: 8px;
+}
+
+.navDropDown {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	color: white;
+	font-size: 16px;
+}
+
+/* Adjust container padding and alignment for smaller screens */
+@media (max-width: 600px) {
+	.iconStyle {
+		width: 20px;
+		height: auto;
+	}
+}
+
+.messages-icon-badge {
+	color: #027bff;
+	position: absolute;
+	top: 12px;
+	z-index: 20;
+	animation: pulse 1.5s infinite;
+}

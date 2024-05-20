@@ -1,0 +1,44 @@
+/* See an example of these styles being used in DeleteProfileModal.jsx */
+
+/* Username, Email Address, Password, Confirm Password */
+.textboxLabel {
+	font-size: 20px;
+	margin-left: 10%;
+	margin-right: 90%;
+}
+
+.inputWithIcon {
+	position: relative;
+	display: flex;
+	align-items: center;
+	left: 10%;
+	right: 10%;
+}
+
+/* Profile icon, email icon, password icon */
+.inputIcon {
+	position: absolute;
+	left: 10px;
+	height: 20px;
+	width: auto;
+}
+
+/* Actual text box styling. Is wide enough so that an icon image will take up space at the start of the box */
+.textbox {
+	width: 80%;
+	padding: 8px 8px 8px 35px;
+	margin: 10px 0;
+	border-radius: 15px;
+	border: 2px solid #ffffff;
+	background-color: #13131300;
+	color: white;
+	font-size: 16px;
+
+	box-sizing: border-box;
+}
+
+.textboxSubLabel {
+	font-size: 18px;
+	margin-left: 10%;
+	margin-right: 90%;
+}

@@ -1,0 +1,54 @@
+.friend-search {
+	margin-bottom: 40px;
+	margin-left: 50px;
+	z-index: 0;
+}
+
+.frnds-toast {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(29, 29, 29, 0.75);
+	color: white;
+	opacity: 0.95;
+	padding: 10px 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 300px;
+	max-width: 80%;
+	box-sizing: border-box;
+	visibility: hidden;
+	font-size: 16px;
+	animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes slideIn {
+	from {
+		bottom: 0;
+		opacity: 0;
+	}
+	to {
+		bottom: 20px;
+		opacity: 0.95;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		visibility: visible;
+		opacity: 0.95;
+	}
+	to {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+.frnds-toast-visible {
+	visibility: visible;
+}

@@ -1,0 +1,44 @@
+.message-group {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	cursor: pointer;
+	border-bottom: 0.5px solid #000000;
+}
+
+.message-group:hover {
+	opacity: 70%;
+	background-color: #2d362eaa;
+}
+
+.message-group-image {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.message-group-username {
+	font-weight: bold;
+	text-align: left;
+}
+
+.message-group.selected {
+	background-color: rgba(30, 30, 30, 0.55);
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;
+	}
+	50% {
+		transform: scale(1.2);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;
+	}
+}

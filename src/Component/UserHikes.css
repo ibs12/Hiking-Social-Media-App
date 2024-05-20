@@ -1,0 +1,167 @@
+.nothingHereText {
+	color: #c4c4c4;
+	font-size: 16px;
+	text-align: center;
+}
+
+.userHikesImage {
+	width: 60%;
+	max-width: 300px;
+	margin: auto;
+}
+
+.cardsArea,
+.hikeCardsArea {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	padding-bottom: 30px;
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+	.cardsArea {
+		width: 100%; /* Further reduced width on small smartphones */
+	}
+	hikeCardsArea {
+		width: 100%; /* Further reduced width on small smartphones */
+	}
+}
+
+.hikesSummary {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	gap: 10px;
+
+	margin-top: 3%;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	padding: 10px;
+}
+
+.hikeCardsArea {
+	margin-top: 5%;
+	padding-bottom: 50px;
+}
+
+.hikeCard {
+	width: 266px;
+	height: 150px; /*134px;*/
+	flex-shrink: 0;
+	border-radius: 20px;
+	background: #d9d9d9;
+	padding: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+	transition: transform 0.3s ease;
+	justify-content: space-between; /* This spreads out the content */
+}
+
+.hikeCard:hover {
+	transform: scale(1.07);
+	cursor: pointer;
+}
+
+.cardHeader {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.hikesProfilePic {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 10px;
+}
+
+.username {
+	font-size: 16px;
+	color: #000000;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+
+.hikeInfo {
+	align-self: center;
+}
+
+.hikeTitle {
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+	font-family: "Roboto", sans-serif;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-height: 36px;
+}
+
+.hikeLocation {
+	margin-top: 2%;
+	color: #000000;
+	display: flex;
+	justify-content: center; /* This will center the contents */
+	align-items: center; /* This will vertically align the contents */
+	font-size: 12px;
+	margin-bottom: 2%;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+
+.locationIcon {
+	margin-right: 5px;
+	width: 20px;
+}
+
+.hikeImages {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hikeImage {
+	width: 30px;
+}
+
+.hikers-count {
+	color: black;
+	margin: 0 0px;
+	font-size: 12px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.completed-status {
+	color: black;
+	font-size: 12px;
+	text-align: center;
+}
+
+.person-hiking-image {
+	font-size: 25px;
+}
+
+.person-hiking-image-card {
+	font-size: 22px !important;
+}
+
+.group-image {
+	color: #000000;
+	font-size: 25px;
+	margin: 0 3px;
+}
+
+.completed-card {
+	background-color: rgb(164, 164, 164);
+}

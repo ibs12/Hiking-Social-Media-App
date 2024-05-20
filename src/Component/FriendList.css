@@ -1,0 +1,241 @@
+.friend-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 3% 15%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-flow: row wrap;
+}
+
+.username-text {
+	color: black;
+	
+}
+
+.friend-tile {
+	color: black;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 10px;
+	text-align: center;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: calc(20% - 20px);
+	z-index: 1;
+	background-color: #f0f0f0;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	max-width: calc(20% - 20px);
+}
+
+.friend-tile:hover {
+	background-color: rgba(217, 217, 217, 0.907);
+	color: black;
+}
+
+.friend-profile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 9999px;
+}
+
+.friend-status-active {
+	color: #7bd48b;
+}
+
+.friend-status-blocked {
+	color: #fe3155;
+}
+
+.friend-profile img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 9999px;
+	object-fit: cover;
+}
+
+.friend-username {
+	display: block;
+	margin-top: 5px;
+}
+
+.friend-actions button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.friend-actions img {
+	width: 25px;
+	height: 25px;
+}
+
+.button-icon {
+	padding: 10px 15px;
+	margin: 5px 0;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #871818;
+	color: white;
+}
+
+.button-icon-msg {
+	padding: 10px 15px;
+	margin: 5px 0;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	background-color: #1c294c;
+}
+
+.button-accept-request {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 15px;
+	margin: 5px 0;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.button-accept-request:hover {
+	background-color: #45a049;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-reject-request,
+.button-cancel-request {
+	background-color: #871818;
+	color: white;
+	padding: 10px 15px;
+	margin: 5px 0;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.button-reject-request:hover,
+.button-cancel-request:hover {
+	background-color: #d32f2f;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.options-container {
+	position: absolute;
+	display: inline-block;
+	z-index: 3;
+}
+
+.options-dropdown {
+	display: none;
+	max-width: 200px;
+	position: absolute;
+	left: 0;
+	flex-direction: column;
+	gap: 2px;
+	background-color: #1e1e1e;
+	padding: 2px;
+	border-radius: 4px;
+	z-index: 0;
+}
+
+.options-dropdown-active {
+	display: flex;
+	z-index: 3;
+}
+
+.options-dropdown .pill-button {
+	width: 200px;
+	z-index: 3;
+}
+
+.friend-profile {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	border-radius: 9999px;
+	position: relative;
+	z-index: 1;
+}
+
+.friends-toast {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(29, 29, 29, 0.5);
+	color: white;
+	opacity: 0.95;
+	padding: 10px 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 300px;
+	max-width: 80%;
+	box-sizing: border-box;
+	visibility: hidden;
+	font-size: 16px;
+	animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes slideIn {
+	from {
+		bottom: 0;
+		opacity: 0;
+	}
+	to {
+		bottom: 20px;
+		opacity: 0.95;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		visibility: visible;
+		opacity: 0.95;
+	}
+	to {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+.friends-toast-visible {
+	visibility: visible;
+}
+
+@media (max-width: 1690px) {
+	.friend-tile {
+		flex-basis: calc(25% - 20px);
+		max-width: calc(25% - 20px);
+	}
+}
+
+@media (max-width: 1024px) {
+	.friend-tile {
+		flex-basis: calc(33% - 20px);
+		max-width: calc(33% - 20px);
+	}
+}
+
+@media (max-width: 768px) {
+	.friend-tile {
+		flex-basis: calc(100% - 20px);
+		max-width: calc(100% - 20px);
+	}
+}

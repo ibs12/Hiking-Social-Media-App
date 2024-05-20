@@ -1,0 +1,141 @@
+.messaging-page {
+	display: flex;
+	min-height: 100vh;
+}
+
+.scrollable-class {
+}
+
+.messages-header {
+	padding-left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	.left-column {
+		height: calc(100vh);
+		overflow-y: scroll;
+		flex: 0 0 50%;
+		padding-top: 80px;
+	}
+
+	.right-column {
+		background-color: rgba(30, 30, 30, 0.55);
+		flex: 1;
+		height: calc(100vh);
+	}
+
+	.message-input-container {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		padding: 20px 20px 20px 20px;
+		bottom: 0px;
+		position: fixed;
+		border-radius: 8px 8px 0px 0px;
+		background-color: #000000;
+		border-top: 1px solid #000000;
+	}
+}
+
+.left-column,
+.right-column {
+	transition: flex 0.5s;
+}
+
+/* Styles for mobile layout (single column) */
+@media only screen and (max-width: 767px) {
+	.left-column,
+	.right-column {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left-column.hidden {
+		display: none;
+	}
+
+	.right-column.hidden {
+		display: none;
+	}
+
+	.left-column.flex-1 {
+		flex: 1;
+		height: calc(100vh);
+		overflow-y: scroll;
+		padding-top: 80px;
+		padding-bottom: 400px;
+	}
+
+	.right-column.flex-1 {
+		background-color: rgba(30, 30, 30, 0.55);
+		flex: 1;
+		height: calc(100vh);
+	}
+
+	.message-input-container {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		padding: 10px 20px 10px 20px;
+		width: 100vw !important;
+		height: 7vh;
+		position: fixed;
+		bottom: 0;
+		border-radius: 8px 8px 0px 0px;
+		background-color: #000000;
+		border-top: 1px solid #000000;
+	}
+}
+
+.left-column-heading {
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-decoration: underline;
+	text-align: left;
+	padding: 20px 0px 0px 20px;
+}
+
+.message-input-container {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	width: 50vw;
+	height: 7vh;
+	padding: 20px 20px 20px 20px;
+	bottom: 0;
+	border-radius: 8px 8px 0px 0px;
+	background-color: #00000028;
+	border-top: 1px solid #000000;
+	backdrop-filter: blur(10px);
+}
+
+.message-input {
+	flex: 1;
+	border: none;
+	border-radius: 20px;
+	padding: 8px 15px;
+	margin-right: 10px;
+	color: rgb(255, 255, 255);
+	background-color: #4d4d4dcb;
+	font-size: 16px; /* Ensures mobile browsers do not zoom in on focus */
+}
+
+.image-icon {
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.image-icon:hover {
+	opacity: 70%;
+}
+
+.send-icon {
+	cursor: pointer;
+	width: 25px;
+	height: 30px;
+}
+.send-icon:hover {
+	opacity: 70%;
+}

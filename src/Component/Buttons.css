@@ -1,0 +1,152 @@
+.explore-hike-nav-button {
+	background-color: #1e1e1e;
+	padding: 6px 12px;
+	border-radius: 999px 0 0 999px;
+	color: #ffffff;
+	border-right: 0.5px solid;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.explore-hike-nav-container {
+	display: flex;
+}
+
+.explore-hike-nav-button:hover {
+	background-color: #3e3e3e;
+}
+
+.explore-hike-nav-text {
+	margin: 0 10px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	color: white;
+}
+
+.explore-hike-nav-button-right {
+	border-radius: 0 999px 999px 0;
+	border-right: none;
+	border-left: 0.5px solid;
+}
+
+.pill-button {
+	padding: 6px 12px;
+	font-size: 16px;
+	border-radius: 999px;
+	border: none;
+	text-wrap: nowrap;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+
+.pill-button.active {
+	box-shadow: 0px 0px 0px 1px;
+}
+
+button {
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 90%;
+}
+
+.circle-button {
+	width: 56px;
+	height: 56px;
+	font-size: 24px;
+	border-radius: 999px;
+	border: none;
+	cursor: pointer;
+	display: grid;
+	place-items: center;
+}
+
+.orange {
+	color: #ffffff;
+	background-color: #b68455;
+}
+
+.gray {
+	color: #ffffff;
+	background-color: #afafaf;
+}
+
+:disabled {
+	cursor: not-allowed;
+}
+
+.brown {
+	color: #ffffff;
+	background-color: #b67255;
+}
+
+.yellow {
+	color: #ffffff;
+	background-color: #b6b355;
+}
+
+.pink {
+	color: #ffffff;
+	background-color: #b6556f;
+}
+
+.purple {
+	color: #ffffff;
+	background-color: #8555b6;
+}
+
+.dark-purple {
+	color: #ffffff;
+	background-color: #6255b6;
+}
+
+.aqua {
+	color: #ffffff;
+	background-color: #5593b6;
+}
+
+.blue {
+	color: #ffffff;
+	background-color: #556ab6;
+}
+
+.light-blue {
+	color: #ffffff;
+	background-color: #55b6ab;
+}
+
+.green {
+	color: #ffffff;
+	background-color: #63b655;
+}
+
+.light-green {
+	color: #ffffff;
+	background-color: #55b687;
+}
+
+.red {
+	color: #ffffff;
+	background-color: #b65555;
+}
+
+.black {
+	color: #ffffff;
+	background-color: #000;
+}
+
+.difficulty-easy {
+	color: #ffffff;
+	background-color: #157d15d9;
+}
+
+.difficulty-medium {
+	color: #ffffff;
+	background-color: #ff7745;
+}
+
+.difficulty-hard {
+	color: #ffffff;
+	background-color: #ff4545;
+}

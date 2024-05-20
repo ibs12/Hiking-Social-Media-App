@@ -1,0 +1,104 @@
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(5px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	
+}
+
+.modalContent {
+	background-color: #1e1e1ee7;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	width: fit-content;
+	font-family: "Roboto", sans-serif; 
+
+}
+
+.dialogueText {
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+
+}
+
+.textboxLabel {
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+
+}
+
+.modalContent h3  {
+	margin-top: 0;
+	color: white;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+	
+	
+}
+
+.modalContent button {
+	margin-right: 10px;
+	
+}
+
+.noButton {
+	cursor: pointer;
+	padding: 10px 20px;
+	margin-right: 15px;
+
+	border: none;
+	border-radius: 15px;
+	background-color: #000000;
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+}
+
+.yesButton {
+	cursor: pointer;
+	padding: 10px 20px;
+	margin-left: 15px;
+	border: none;
+	border-radius: 15px;
+	background-color: #800000;
+	color: white;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	
+	
+}
+
+.noButton:hover {
+	background-color: #131313;
+}
+
+.yesButton:hover {
+	background-color: #6b0202;
+}
+
+.dialogueText {
+	font-size: 20px;
+}
+
+.closeButton {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	border: none;
+	background: transparent;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}

@@ -1,0 +1,527 @@
+/* For gods sake, please replace this with styles that are less horrifying than these */
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+}
+
+.App-header {
+	background-color: #405644;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.trek-header {
+	font-family: "Shadows Into Light", cursive;
+	font-size: 80px;
+	text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.trek-logo {
+	width: 80px;
+	height: 80px;
+}
+
+/* .danger-validation-error {
+  font-size: 14px;
+  color: red
+} */
+
+.deletePost {
+	width: 100%;
+}
+.deleteIcon {
+	float: right;
+}
+
+.settings {
+	width: 100%;
+}
+
+.link-button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+.link-button:hover,
+.link-button:focus,
+.link-button:active {
+	text-decoration: none;
+	outline: none;
+}
+
+.submitbutton {
+	background-color: blue;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+.no-suggestions {
+	color: #999;
+	padding: 0.5rem;
+}
+
+.profileform label {
+	display: block;
+}
+
+.App-link {
+	color: #09d3ac;
+}
+
+.postlist {
+	text-align: left;
+	background: blue;
+	border-radius: 20px;
+	padding: 30px;
+	margin: 10px;
+
+	width: 60%;
+	display: inline-flex;
+}
+
+.userlist {
+	text-align: left;
+	background: blue;
+	border-radius: 20px;
+	padding: 30px;
+	margin: 10px;
+	width: 60%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.comments {
+	background: white;
+	width: 90%;
+	display: block;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
+	color: black;
+}
+
+.commentlist {
+	text-align: left;
+	background: lightblue;
+	color: black;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
+	font-size: 12px;
+	width: 90%;
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.maincontent {
+	flex-grow: 1;
+	width: 100%;
+}
+
+.posts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.postbody {
+	max-width: 650px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	color: red;
+}
+
+.comment-block {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.sidenav {
+	/* need to specify some position other than static, so height can apply.
+     Fixed works since it will stay fixed to the side - 0 from both left and top. */
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	height: 80px;
+	width: 100%;
+	z-index: 500;
+
+	/* internally to this container, we want to use flex positioning of the menu elements */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+
+	background-color: #1e1e1e;
+	z-index: 1000;
+	box-shadow: 0px 4px 5px 0px #07070766;
+}
+
+.tag-active {
+	border: red;
+	border-width: thick;
+	border-style: solid;
+}
+
+.sidenav ul {
+	list-style-type: none;
+	padding: 5px;
+	margin: 0px;
+	margin-top: 0px;
+}
+
+.sidenav-icon {
+	width: 50px;
+	height: 50px;
+	/* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; */
+	padding: 10px;
+}
+.side-menu-items {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between; /* Adjusted */
+	width: 100%;
+
+	list-style-type: none;
+}
+.flex-grow-spacer {
+	flex-grow: 1;
+}
+.comment-indicator {
+	text-align: right;
+	width: 100%;
+	display: block;
+	float: right;
+	margin-top: 10px;
+}
+
+.comment-icon {
+	width: 40px;
+	height: 40px;
+	float: right;
+}
+
+.comment-indicator-text {
+	background-color: lightblue;
+	color: black;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	width: 120px;
+	padding: 5px;
+	float: right;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+/* The Modal (background) */
+.modal {
+	display: block;
+	position: fixed; /* Stay in place */
+	z-index: 1000; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	padding-top: 60px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center; /* Center text horizontally for block elements inside */
+	margin: 15% auto; /* 15% from the top and centered horizontally */
+	padding: 20px; /* Adjust padding as needed */
+	position: relative; /* Needed for absolute positioning of children */
+	border: 1px solid white;
+	width: 50%; /* Adjust width as needed */
+	height: 200px; /* Fixed height, adjust as needed */
+	border-radius: 5px; /* Small rounded corners */
+	background: rgba(30, 30, 30, 0.55);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(25px);
+}
+
+/* The Close Button */
+.close {
+	position: absolute; /* Absolute positioning relative to .modal-content */
+	top: 0px; /* Distance from the top of .modal-content */
+	right: 5px; /* Distance from the right of .modal-content */
+	color: white;
+	font-size: 28px;
+	font-weight: bold;
+	border-radius: 5px; /* Small rounded corners for consistency */
+}
+
+.close:hover,
+.close:focus {
+	color: white; /* Enhanced visibility on hover/focus */
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.chat {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chat__main {
+	flex: 0.6;
+}
+
+.message__container {
+	width: 100%;
+	height: 60vh;
+	background-color: purple;
+	padding: 20px;
+	overflow-y: scroll;
+}
+
+.chat__footer {
+	padding: 20px;
+	background-color: black;
+	width: 100%;
+}
+
+.form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.message {
+	width: 80%;
+	height: 100%;
+	border: 1px solid #ddd;
+	outline: none;
+	padding: 12px;
+}
+
+.messageIcon {
+	width: 40px;
+	height: 40px;
+	transition: transform 0.3s ease;
+}
+
+.messageIcon:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.sendBtn {
+	width: 150px;
+	background-color: green;
+	padding: 10px;
+	border: none;
+	outline: none;
+	color: yellow;
+	cursor: pointer;
+}
+
+.message__recipient {
+	background-color: #000;
+	width: 300px;
+	padding: 8px;
+	font-size: 15px;
+	text-align: start;
+	color: #fff;
+	width: fit-content;
+}
+
+.message__sender {
+	background-color: blue;
+	max-width: 400px;
+	padding: 8px;
+	margin-left: auto;
+	font-size: 15px;
+	width: fit-content;
+}
+
+.message__sender {
+	text-align: right;
+}
+
+.recipient__name {
+	text-align: left;
+	color: #000;
+	font-size: 13px;
+}
+
+.sender__name {
+	font-size: 13px;
+	color: #000;
+	text-align: right;
+}
+
+.profileWrapper {
+	margin-left: 100px;
+	display: grid;
+	place-items: center;
+	padding-top: 180px;
+}
+
+.devon-image {
+	width: 300px;
+}
+
+.prf-pages{
+	padding-top: 80px;
+}
+
+.profileContainer {
+	max-width: 600px;
+}
+
+/* Added by Robert */
+.errorMessageText {
+	font-size: 18px;
+	color: #fe2929;
+}
+
+.about-page {
+	padding-top: 80px;
+}
+
+.page {
+	margin-top: 80px;
+	padding: 0 12px;
+	min-height: 100svh;
+}
+
+.App-header {
+	justify-content: start; /* Aligns items to the start of the container */
+	padding-top: 0; /* Removes extra padding at the top */
+}
+
+.search-bar-container {
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 0;
+}
+
+.horizontal-line {
+	margin-top: 0;
+}
+/* Trying to force dropdown to change */
+option {
+	-webkit-appearance: none;
+	background-color: rgba(0, 0, 0, 0.25);
+	color: white;
+}
+
+.link {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.link:hover {
+	opacity: 65%;
+}
+
+.loader {
+	border: 8px solid #f3f3f3;
+	border-top: 8px solid #3498db;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.fade-in {
+	animation: fadeInAnimation 0.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.language-change-box {
+	background-color: rgba(30, 30, 30, 0.55);
+	width: 200px;
+	height: 40px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	backdrop-filter: blur(25px);
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.globe-icon {
+	padding-left: 5px;
+}
+
+.placeholder-text {
+	color: gray;
+}
+
+.input-field::placeholder {
+	color: gray !important;
+}
+
+.post-options-button {
+	padding: 8px 16px;
+	margin: 1.5px 0;
+	border-radius: 4px;
+}

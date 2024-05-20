@@ -1,0 +1,99 @@
+.friendButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #314c1c;
+	border: none;
+	cursor: pointer;
+	padding: 10px 20px;
+	margin-right: 15px;
+	border-radius: 15px;
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+}
+
+.friendButton:hover {
+	opacity: 70%;
+}
+
+.redButton {
+	background-color: #800000;
+	color: white;
+}
+
+.grayButton {
+	background-color: gray;
+	color: white;
+}
+span.profile-options {
+	padding-top: 5px;
+	top: 95px;
+	right: calc(50% - 120px);
+}
+
+.options-menu-button {
+	padding: 2px 10px;
+	background: #344738;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	/* box-shadow: 5px 5px 5px black; */
+}
+
+.options-menu {
+	position: absolute;
+	/* right: 0; */
+	background: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.block-button {
+	background-color: darkred;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	margin: 5px;
+	cursor: pointer;
+	border-radius: 20px;
+	width: 130px;
+}
+
+.block-button:hover {
+	background-color: red;
+}
+
+.block-toast {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(29, 29, 29, 0.5);
+	color: white;
+	opacity: 0.95;
+	padding: 10px 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 300px;
+	max-width: 80%;
+	box-sizing: border-box;
+	visibility: hidden;
+	font-size: 16px;
+	animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+.block-toast-visible {
+	visibility: visible;
+}
+
+@media (max-width: 599px) {
+	.options-menu {
+		right: 0;
+	}
+}
