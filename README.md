@@ -3,7 +3,7 @@ Frontend for the UB CSE370 course project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Figma design file link: https://www.figma.com/design/oHChq1o8Q0wZYlUIRLvEnN/CSE-370---Won-One?node-id=0-1&t=TEDtjHjnP3aZdcEZ-1
+Figma design file link: [Figma Link](https://www.figma.com/design/oHChq1o8Q0wZYlUIRLvEnN/CSE-370---Won-One?node-id=0-1&t=TEDtjHjnP3aZdcEZ-1)
 
 # Screenshots
 
