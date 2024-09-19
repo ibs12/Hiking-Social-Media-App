@@ -4,33 +4,33 @@ Frontend for the UB CSE370 course project
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-## Screenshots
+# Screenshots
 
-# Gallery Page
+## Gallery Page
 <img width="1903" alt="Screenshot 2024-07-02 at 2 24 47 PM" src="https://github.com/user-attachments/assets/256429b5-c724-43ac-afea-36935384960f">
 
-# Create A Post Page
+## Create A Post Page
 <img width="950" alt="Screenshot 2024-07-02 at 2 35 09 PM" src="https://github.com/user-attachments/assets/997f867d-f21a-4cdc-9a4f-7d9b4279abf4">
 
-# Profile Page
+## Profile Page
 <img width="957" alt="Screenshot 2024-07-02 at 2 28 11 PM" src="https://github.com/user-attachments/assets/01291ccf-59c5-4cc8-bd76-047a10d2a1b4">
 
-# Register Page
+## Register Page
 <img width="1646" alt="Screenshot 2024-07-02 at 2 37 25 PM" src="https://github.com/user-attachments/assets/d2fcd5b5-f071-4553-95a4-b5345143493f">
 
-# Login Page
+## Login Page
 <img width="1649" alt="Screenshot 2024-07-02 at 2 37 36 PM" src="https://github.com/user-attachments/assets/7b1d3f72-2bad-44fc-958a-3e469460158e">
 
-# Forgot Password Page
+## Forgot Password Page
 <img width="1649" alt="Screenshot 2024-07-02 at 2 37 51 PM" src="https://github.com/user-attachments/assets/a5b8b6d8-9b19-4394-a070-b97454cf8f72">
 
-# Post Page
+## Post Page
 <img width="950" alt="Screenshot 2024-07-02 at 2 27 45 PM" src="https://github.com/user-attachments/assets/2c904cc3-19b7-4ab3-a7ca-44fdd965ef53">
 
-# Direct/Group Messaging Page
+## Direct/Group Messaging Page
 <img width="951" alt="Screenshot 2024-07-02 at 2 28 44 PM" src="https://github.com/user-attachments/assets/bf56e028-7413-490d-a689-be046f4c43b3">
 
-# About Page
+## About Page
 <img width="959" alt="Screenshot 2024-07-02 at 2 29 02 PM" src="https://github.com/user-attachments/assets/4d63ea01-f324-4878-be9a-a5cfda59fe60">
 
 
